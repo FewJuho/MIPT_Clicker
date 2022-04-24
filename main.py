@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import pygame as pg
 import sys
 from random import randint
@@ -78,7 +79,7 @@ def Download_Anim(count_dots):
 
 
 def Start_Screen():
-    background_surf = pg.image.load('background.jpg')
+    background_surf = pg.image.load('Textures/background.jpg')
     sc.blit(background_surf, (0, 0))
 
     str = "Hello!  This  is  a  game  about  saving  up  money "
@@ -143,12 +144,12 @@ sc = pg.display.set_mode((W, H))
 surf_top = pg.Surface((W, 50))
 surf_buy_button = pg.Surface((90, 20))
 surf_buy_button2 = pg.Surface((90, 20))
-background_surf = pg.image.load('background.jpg')
-red_videocard = pg.image.load('red_videocard.png')
-hand = pg.image.load('hand.jpg')  # 64 100
-automation = pg.image.load('autimation.png')  # 51 80
-maldives = pg.image.load('maldives.jpg') #fullscreen
-ticket = pg.image.load('ticket.jpg') #200 200
+background_surf = pg.image.load('Textures/background.jpg')
+red_videocard = pg.image.load('Textures/red_videocard.png')
+hand = pg.image.load('Textures/hand.jpg')  # 64 100
+automation = pg.image.load('Textures/autimation.png')  # 51 80
+maldives = pg.image.load('Textures/maldives.jpg') #fullscreen
+ticket = pg.image.load('Textures/ticket.jpg') #200 200
 red_videocard.set_colorkey((255, 255, 255))
 automation.set_colorkey((255, 255, 255))
 
