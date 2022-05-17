@@ -194,7 +194,7 @@ class Game:
         while RUNNING:
             for i in self.pg.event.get():
                 if i.type == self.pg.QUIT:
-                    sys.exit()
+                    self.sys.exit()
                 elif i.type == self.pg.KEYDOWN:
                     if i.key == self.pg.K_ESCAPE:
                         RUNNING = False
